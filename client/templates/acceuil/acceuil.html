@@ -1,0 +1,43 @@
+<template name="acceuil">
+	{{#if currentUser}}
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#postModal">
+		  Postez votre repas!
+		</button>
+	{{/if}}
+	<!-- Modal -->
+	<div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="myPostModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myPostModalLabel">Description Repas</h4>
+	      </div>
+	      <div class="modal-body">
+	        {{#autoForm collection="Foods" id="insertFoodForm" type="insert"}}
+	        {{> afQuickField name="body" rows=4}}
+	        <button type="submit" class="btn btn-primary">Send</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        {{/autoForm}}
+	      </div>    
+	    </div>
+	  </div>
+	</div>
+
+	<hr>
+
+	{{#each foods}}
+		<div class="row food">
+			<div class="col-md-1">
+				<img src="{{getProfileImg userId}}">
+			</div>
+			<div class="col-md-11">
+				<small>Posted By {{username}} at {{createdAt}}</small>
+				<p>{{body}}</p>
+			</div>
+		</div>
+	{{else}}
+		<p>Pas de repas à vendre</p>
+	{{/each}}
+
+</template>
