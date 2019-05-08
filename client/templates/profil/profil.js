@@ -1,4 +1,4 @@
-Template.profile.events({
+Template.profil.events({
 	"submit .edit-profile": function(event){
 		var file = $('#profileImage').get(0).files[0];
 		
@@ -25,4 +25,9 @@ Template.profile.events({
 
 		return false;
 	}
+	
+});
+
+Template.leaderboard.helpers({
+    // helper functions go here
 });
