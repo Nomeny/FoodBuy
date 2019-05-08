@@ -1,10 +1,19 @@
 <template name="profil">
-	<h3>Edit Profile</h3>
+	<h3>Editer mon profil</h3>
 	<form class="edit-profile" enctype="multipart/form-data">
-		Ajouter une image de profil: <input type="file" name="profileImage" id="profileImage">
-		<br>
-		{{username}} <br>
-		{{Note}}/5 <br>
+		Ajouter une image de profil: <input type="file" name="profileImage" id="profileImage"> <br>
+		Nom d'utilisateur : <br>
+		<input type="text"> <br>
+		Mot de passe:		<br>
+		<input type="text"> <br>
 		<input type="submit" value="Valider">
 	</form>
+	<h3> Mon profil </h3>
+	{{#each getUser}}
+	Nom d'utilisateur : {{currentUser.username}} <br>
+	E-mail : {{userEmail}} <br>
+	Adresse : 
+	{{else}}
+	Pas d'informations trouvées
+	{{/each}}
 </template>

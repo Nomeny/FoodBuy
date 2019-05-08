@@ -22,12 +22,17 @@ Template.profil.events({
 				}
 			});
 		}
-
+		Router.go('/');
 		return false;
 	}
 	
 });
 
-Template.leaderboard.helpers({
-    // helper functions go here
+Template.profil.helpers({
+    'getUser' : function(){
+		return Meteor.users.find();
+		},
+		'userEmail' : function() {
+			return this.emails[0].address;
+		},
 });

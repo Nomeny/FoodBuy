@@ -1,8 +1,7 @@
 Meteor.subscribe("foods");
-
 Meteor.subscribe("ProfileImages");
-
 Meteor.subscribe("UserImages");
+Meteor.subscribe("utilisateurs");
 
 Meteor.startup(function () {
     AccountsEntry.config({        
