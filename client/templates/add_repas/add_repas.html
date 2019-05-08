@@ -1,0 +1,35 @@
+<template name="add_repas">
+	<h3>Postez votre Repas</h3>
+	<form class="add_repas" enctype="multipart/form-data">
+		<div class="form-group">
+  			<label>Nom</label>
+	    	<input type="text" name="name" class="form-control" placeholder="Nom repas">
+		</div>
+		<div class="form-group">
+	  		<label>Categorie</label>
+		    <select class="form-control" name="category">
+	      		<option value="0">--Selectionnez Categorie--</option>
+	      		{{#each categories}}
+	        		<option value="{{slug}}">{{name}}</option>
+	      		{{/each}}
+	      </select>
+		</div>
+		 <div class="form-group">
+      		<label>Image</label>
+      		<input type="file" name="repasImage" id="repasImage">
+    	</div> 
+    	<div class="form-group">
+      		<label>Description</label>
+      		<textarea name="description" class="form-control"></textarea>
+    	</div> 
+    	<div class="form-group">
+      <label>Populaire</label>
+	      <input type="radio" name="is_featured" value="1">Oui
+	      <input type="radio" name="is_featured" value="0" checked>Non
+    	</div> 
+    	<div>
+		  <input type="submit" name="submit" class="btn btn-success" value="Postez">
+		  <a href="/" class="btn btn-default">Fermez</a>
+		</div>
+	</form>
+</template>

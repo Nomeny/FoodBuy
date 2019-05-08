@@ -1,0 +1,18 @@
+<template name="acceuil">
+    <h3>Repas populaires</h3>
+	{{#each repas}}
+		<div class="row product-row">
+		<div class="col-md-2">
+			<img class="full" src="{{image}}">
+		</div>
+		<div class="col-md-10">
+			<h4>{{name}}</h4>
+			<p>Note: RATING</p>
+		<p>{{truncateText description 150}}</p>
+			<a href="{{pathFor 'repas'}}" class="btn btn-default">Commentaires</a> <a href="{{pathFor ''}}" class="btn btn-primary">Ajout Commentaire</a>
+		</div>
+	</div>
+	{{else}}
+		<p>Pas de repas</p>
+	{{/each}}
+</template>

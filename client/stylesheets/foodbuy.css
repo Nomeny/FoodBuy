@@ -2,12 +2,25 @@ img{
 	width:100%;
 }
 
-.post{
-	margin-bottom:20px;
-	padding-bottom: 20px;
-	border-bottom: #ccc solid 1px;
+
+footer{
+	background:#333;
+	color:#fff;
+	height:40px;
+	text-align: center;
+	padding-top:10px;
+	margin-top:40px;
 }
 
-.post:last-child{
-	border:0;
+.full{
+	width:100%;
 }
+
+.product-row{
+	border-bottom:#ccc 1px solid;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+
+

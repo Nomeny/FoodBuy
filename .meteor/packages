@@ -29,4 +29,9 @@ cfs:standard-packages
 cfs:gridfs
 aldeed:simple-schema
 aldeed:autoform
+<<<<<<< Updated upstream
 msavin:mongol
+=======
+mrt:flash-messages
+momentjs:moment
+>>>>>>> Stashed changes
