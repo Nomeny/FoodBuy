@@ -23,6 +23,12 @@ Template.profil.events({
 			});
 		}
 		return false;
+	},
+	"click .editbutton": function(event){
+		Session.set('displayProfile', false)
+	},
+	"click .submitbutton": function(event){
+		Session.set('displayProfile', true)
 	}
 	
 });
@@ -36,4 +42,11 @@ Template.profil.helpers({
 		'userEmail' : function() {
 			return this.emails[0].address;
 		},
+	'displayProfile' : function(){
+		return Session.get('displayProfile');
+	},
+
+	
 });
+
+Session.set('displayProfile', true);
