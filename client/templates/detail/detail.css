@@ -1,0 +1,17 @@
+
+.repas-detail-main{
+    padding-top: 30px;
+    display: flex;
+    width: 99vw;
+    justify-content: space-between;
+}
+
+.repas-detail{
+    width: 49%;
+}
+.droit{
+    padding-top: 50px;
+}
+.repas-detail > img{
+    max-width: 100%;
+}
