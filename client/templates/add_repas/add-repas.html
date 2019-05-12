@@ -1,0 +1,48 @@
+<template name="add_repas">
+	<h3>Postez votre Repas</h3>
+	<form class="add_repas" method="POST" enctype="multipart/form-data">
+		<div class="input-block" >	
+			<label for="nom">Nom de Plat:</label>
+			<input type="text" name="nom"><br>
+			<label>Categorie</label>
+			<select class="" name="category">
+				<option value="0">--Selectionnez Categorie--</option>
+				{{#each categories}}
+					<option value="{{slug}}">{{name}}</option>
+				{{/each}}
+			</select><br>
+			<label for="type">Salé ou Sucré?</label>
+			<select name="type">
+				<option>Non salé ni sucré</option>
+				<option>Salé</option>
+				<option>sucré</option>
+			</select><br>
+			<label>Veuillez choisir</label><br>
+			<select name="estVeg">
+				<option>non vegane</option>
+				<option>non végétarien</option>
+				<option>Vegan</option>
+				<option>Végétarien</option>
+			</select><br>
+			<label for="ingredients">Ingredients:</label><br>
+			<textarea name="ingredients" class="post" cols="40" rows="3" placeholder="Spaghetti Barilla n°5, ragoût, Grana Padano, poivre"></textarea><br>		
+			<label for="portions">Portions:</label>
+			<input type="number" name="portions" value="1">
+			<label for="lieu">Ville ou Code Postal:</label>
+			<input type="text" name="lieu">
+			<label for="image" >Image</label>
+			<input type="file" id="repasImage" name="image">
+			<label for="image_alt">Alternative text pour l'image</label>
+			<input type="text" name="image_alt">
+			<!-- alternatif texte pour les images est très important pour ceux qui utilisent "screen reader" (aveugles par ex.)
+			et pour ceux qui peuvent pas voir les images, ils vont voir ce texte-->
+			<label for="description" >Description:</label>
+			<input type="textarea" name="description">
+			<label for="addresse" >Adresse:</label>
+			<input type="text" name="adresse">
+			<label for="prix">Le prix:</label>
+			<input type="number" name="prix" class="post" value="0"> <br>
+			<input type="submit" value="Valider"> <!-- pour un formulaire c'est bien d'utiliser input type="submit" -->
+		</div>	
+	</form>
+</template>

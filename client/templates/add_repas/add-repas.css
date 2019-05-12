@@ -1,0 +1,22 @@
+form{
+	padding: 5px;
+	border-left: 3px solid Cornflowerblue;
+	background-color : #e6eeff;
+
+}
+select,
+textarea,
+input{
+    display : flex;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 250px;
+}
+.input-block{
+    width: 254px;
+    margin: auto;
+}
+
+label[for="nom"]{
+    font-size: 18px;
+}

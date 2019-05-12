@@ -1,0 +1,21 @@
+.repas-image{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.repas-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.repas-block{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 300px;
+    display: block;
+    background-color: rgb(152, 192, 192);
+}
+
+.row{
+    width: 90vw;
+}

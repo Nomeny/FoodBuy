@@ -2,16 +2,19 @@
 .repas-detail-main{
     padding-top: 30px;
     display: flex;
-    width: 99vw;
-    justify-content: space-between;
+    width: 50vw;
+    justify-content: space-around;
 }
-
-.repas-detail{
-    width: 49%;
+.gauche{
+    width: 500px;
+    background-color: rgb(208, 240, 229);
 }
 .droit{
-    padding-top: 50px;
+    width: 500px;
+    background-color: rgb(194, 182, 206)
+
 }
+
 .repas-detail > img{
-    max-width: 100%;
+    width: 500px;
 }
