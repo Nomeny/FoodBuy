@@ -1,0 +1,39 @@
+<template name="accueil">
+	<h3>Repas populaires</h3>
+	<div class="sort">
+		<select name="order" id="classement" size="1">
+			<option value="name">par nom</option>
+			<option value="priceUp">par prix croissants</option>
+			<option value="priceDown">par prix décroissants</option>
+			<option value="star">par note</option>
+			<option value="reviews">par recension</option>
+		</select>
+		<select name="Type" id="type">
+			<option value="vegetarian">Vegetarien</option>
+			<option value="vegan">Vegan</option>
+		</select>
+	</div>
+	<div class="repas-main ">
+		{{#each repas}}
+		<a href="details/{{_id}}">
+			<div class="repas-block">
+				<div class="">
+					<img class="repas-image" src="{{image}}">
+				</div>
+				<div class="">
+					<h4>{{nom}}</h4>
+					<p>{{type}} - {{estVeg}}</p>
+					<p>{{categorie}}</p>
+					<p>Note: RATING</p>
+					<p>{{truncateText description 150}}</p>
+					<a href="{{pathFor 'repas'}}" class="btn btn-default">Commentaires</a> <a href="{{pathFor ''}}"
+						class="btn btn-primary">Ajout Commentaire</a>
+				</div>
+			</div>
+		</a>
+		{{else}}
+		<p>Pas de repas</p>
+		{{/each}}
+	</div>
+
+</template>
