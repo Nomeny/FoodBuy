@@ -33,7 +33,8 @@ Template.add_repas.events({
     		            adresse: adresse,
     		            estVeg: estVeg,
 						image: repasImage,
-						createdAt: new Date()
+						createdAt: moment(new Date()).format('LLL'),
+						//date: moment(createdAt).format('LLL')
 					});
 				}
 			});
@@ -51,7 +52,8 @@ Template.add_repas.events({
 				adresse: adresse,
 				estVeg: estVeg,
 				image: repasImage,
-				createdAt: new Date()
+				createdAt: moment(new Date()).format('LLL'),
+				//date: moment(createdAt).format('LLL')
 			});
 		}
 

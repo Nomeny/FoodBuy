@@ -1,0 +1,24 @@
+<template name='commentaires'>
+    <ul>
+        {{#each commentaires}}
+            {{> message}}
+        {{/each}}
+    </ul>
+
+    <form>
+        <textarea rows='1' cols='100' placeholder="Commentez ce repas!"></textarea>
+    </form>
+</template>
+
+<template name='message'>
+    <li class="message">
+        <img src="{{image}}"/>
+        <div class='message-header'>
+            <strong>{{currentUser.username}}</strong> 
+            <span class='temps'>{{tempsMS}}</span>
+        </div>
+        <div class='message-contenu'>
+        {{message}}
+        </div>
+    </li>
+</template>
