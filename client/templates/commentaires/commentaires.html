@@ -1,5 +1,5 @@
 <template name='commentaires'>
-    <ul>
+    <ul class="list-group list-group-flush">
         {{#each commentaires}}
             {{> message}}
         {{/each}}
@@ -11,11 +11,11 @@
 </template>
 
 <template name='message'>
-    <li class="message">
-        <img src="{{image}}"/>
-        <div class='message-header'>
+    <li class="list-group-item">
+        <img src="{{UserImages.image}}"/>
+        <div class='mb-1'>
             <strong>{{currentUser.username}}</strong> 
-            <span class='temps'>{{tempsMS}}</span>
+            <span class='temps'><small>{{tempsMS}}</small></span>
         </div>
         <div class='message-contenu'>
         {{message}}

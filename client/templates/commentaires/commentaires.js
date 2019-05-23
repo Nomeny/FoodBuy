@@ -4,7 +4,7 @@ Template.commentaires.helpers({
     }
 });
 
-//ajouter un commentraire en appuyant sur la touche "Enter"
+//envoyer un commentraire en appuyant sur la touche "Enter"
 Template.commentaires.events({
     'keypress textarea': function(e, instance) {
         if (e.keyCode == 13){
