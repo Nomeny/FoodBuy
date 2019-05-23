@@ -1,0 +1,43 @@
+.repas-image{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.repas-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.repas-block{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 300px;
+    display: block;
+    background-color: rgb(204, 245, 245);
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.combtn{
+    margin-left: 189px;
+}
+.row{
+    width: 80vw;
+}
+
+.titre{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase; 
+}
+.sort{
+    width: 250px;
+    margin-left: 70%;
+    margin-top: -30px;
+    display: flex;
+}
+.sort > select{
+    width: 123px;
+    height: 30px;
+}

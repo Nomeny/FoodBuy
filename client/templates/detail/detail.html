@@ -16,9 +16,11 @@
 			<p class="cout"><strong>Prix:</strong> {{prix}}.-</p>
 			<p class="temps"><strong>Ajouté: </strong>{{createdAt}}</p><!-- le temps de enregistrement -->
 			<p class="utilisateur"><strong>Ajouté par:</strong> {{currentUser.username}}</p>
+			<div class="detail-com">
+				{{> commentaires}}
+			</div>
 		</div>
-		<div class="detail-com">
-			{{> commentaires}}
-		</div>
+		
 	</div>
+	
 </template>
