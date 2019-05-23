@@ -1,0 +1,12 @@
+<template name='message'>
+        <li class="list-group-item">
+            <img src="{{UserImages.image}}"/>
+            <div class='mb-1'>
+                <strong>{{currentUser.username}}</strong> 
+                <span class='temps'><small>{{tempsMS}}</small></span>
+            </div>
+            <div class='message-contenu'>
+            {{message}}
+            </div>
+        </li>
+    </template>

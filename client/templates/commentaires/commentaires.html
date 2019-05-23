@@ -1,4 +1,5 @@
 <template name='commentaires'>
+    <strong><p>Commentaires:</p></strong>
     <ul class="list-group list-group-flush">
         {{#each commentaires}}
             {{> message}}
@@ -8,17 +9,4 @@
     <form>
         <textarea rows='1' cols='100' placeholder="Commentez ce repas!"></textarea>
     </form>
-</template>
-
-<template name='message'>
-    <li class="list-group-item">
-        <img src="{{UserImages.image}}"/>
-        <div class='mb-1'>
-            <strong>{{currentUser.username}}</strong> 
-            <span class='temps'><small>{{tempsMS}}</small></span>
-        </div>
-        <div class='message-contenu'>
-        {{message}}
-        </div>
-    </li>
 </template>
