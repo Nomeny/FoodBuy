@@ -18,7 +18,7 @@ Template.commentaires.events({
             Commentaires.insert({
                 message: text,
                 tempsenvoie: new Date(),
-                username: Meteor.user().username
+                username: Meteor.user().username,
                 roomId: currentRoomId
             });
         }
