@@ -4,6 +4,10 @@ Template.commentaires.helpers({
     }
 });
 
+// Template.commentaires.helpers({
+//     commentaires: function 
+// })
+
 //envoyer un commentraire en appuyant sur la touche "Enter"
 Template.commentaires.events({
     'keypress textarea': function(e, instance) {
@@ -15,6 +19,7 @@ Template.commentaires.events({
                 message: text,
                 tempsenvoie: new Date(),
                 username: Meteor.user().username
+                roomId: currentRoomId
             });
         }
     }
