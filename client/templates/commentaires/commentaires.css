@@ -1,0 +1,28 @@
+.commentaires-form{
+    background-color: rgb(194, 182, 206) ;
+    width: 100%;
+    position: relative;
+    max-width: 500px;
+
+}
+
+.commentaires-liste{
+    height: 30%;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+.commentaires-form > textarea{
+    width: 100%;
+    padding-right: 70px;
+}
+.commentaire-submit{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(66, 211, 143);
+    color: aliceblue;
+    font-weight: 700;
+    position: relative;
+    left: 417px;
+    top: -40px;
+}
+

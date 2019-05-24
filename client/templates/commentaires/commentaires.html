@@ -1,13 +1,12 @@
 <template name='commentaires'>
-    <strong><p>Commentaires:</p></strong>
-    <ul class="list-group list-group-flush">
+    <ul class="list-group list-group-flush commentaires-liste">
         {{#each commentaires}}
             {{> message}}
         {{/each}}
     </ul>
 
-    <form class="commentaires-form" >
-        <textarea rows='1' cols='100' placeholder="Commentez ce repas!"></textarea>
+    <form class="commentaires-form">
+        <textarea rows='1' cols='100' placeholder="Commentez ce repas!" name="text"></textarea>
         <input type="submit" class="commentaire-submit">
     </form>
 </template>
