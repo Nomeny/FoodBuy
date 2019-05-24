@@ -10,7 +10,7 @@ Template.commentaires.events({
         if (e.keyCode == 13){
             let text = instance.find('textarea').value;
             instance.find('textarea').value = '';
-            
+             
             let currentRoomId = Repas.findOne({_id: this._id});
             
             Commentaires.insert({

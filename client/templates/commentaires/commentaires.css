@@ -17,12 +17,11 @@
 }
 .commentaire-submit{
     width: 70px;
-    height: 40px;
+    height: 30px;
     background-color: rgb(66, 211, 143);
     color: aliceblue;
     font-weight: 700;
     position: relative;
-    left: 417px;
-    top: -40px;
+    margin-top: 5px;
 }
 
