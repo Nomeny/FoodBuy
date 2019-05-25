@@ -1,17 +1,4 @@
 <template name="accueil">
-		<div class="sort">
-				<select name="order" id="classement" size="1">
-					<option value="name">par nom</option>
-					<option value="priceUp">par prix croissants</option>
-					<option value="priceDown">par prix décroissants</option>
-					<option value="star">par note</option>
-					<option value="reviews">par recension</option>
-				</select>
-				<select name="Type" id="type">
-					<option value="vegetarian">Vegetarien</option>
-					<option value="vegan">Vegan</option>
-				</select>
-			</div>
 	<h3 class="titre">Repas populaires</h3>
 	<div class="repas-main ">
 		{{#each repas}}
