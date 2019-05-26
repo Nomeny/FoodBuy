@@ -35,6 +35,7 @@ Template.add_repas.events({
 						image: repasImage,
 						createdAt: moment(new Date()).format('LLL'),
 						//date: moment(createdAt).format('LLL')
+						vendeur: Meteor.user().username
 					});
 				}
 			});
@@ -54,6 +55,7 @@ Template.add_repas.events({
 				image: repasImage,
 				createdAt: moment(new Date()).format('LLL'),
 				//date: moment(createdAt).format('LLL')
+				vendeur: Meteor.user().username
 			});
 		}
 
