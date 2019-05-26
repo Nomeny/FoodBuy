@@ -33,3 +33,5 @@ msavin:mongol
 mrt:flash-messages
 momentjs:moment
 session
+random
+rocketchat:streamer
