@@ -24,8 +24,7 @@
 			<h4>{{name}}</h4>
 			<p>Note: RATING</p>
 			<p>{{truncateText description 150}}</p>
-			<a href="{{pathFor 'repas'}}" class="btn btn-default">Commentaires</a> <a href="{{pathFor 'commentaires'}}"
-				class="btn btn-primary">Ajout Commentaire</a>
+			<a href="details/{{_id}}" class="btn btn-default">Commentaires</a>
 		</div>
 	</div>
 	{{else}}
