@@ -2,7 +2,7 @@
 ---
 ## _FoodBuy - version 1.0_
 
-_Par Andres , Gislain Delavy, Sinem KILIC, Nomeny Ramamonjisoa, Paul Zignani_
+_Par Gislain Delavy, Sinem Kilic, Andres Stadelmann, Nomeny Ramamonjisoa, Paul Zignani_
 
 Projet réalisé dans le cadre du cours Programmation pour Internet II - Meteor.js donné par Isaac Pante et Loris Rimaz
 
