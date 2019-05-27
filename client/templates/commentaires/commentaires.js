@@ -10,11 +10,12 @@ Template.commentaires.events({
         if (e.keyCode == 13){
             let text = instance.find('textarea').value;
             instance.find('textarea').value = '';
-                         
+                  
             Commentaires.insert({
                 message: text,
                 tempsenvoie: new Date(),
                 username: Meteor.user().username,
+                roomId: currentRoomId
             });
         }
     }
