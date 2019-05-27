@@ -6,6 +6,6 @@ Template.message.helpers({
     },
 
     tempsMS: function() {
-        return moment(this.tempsenvoie).format('LT');
+        return moment(this.tempsenvoie).format('LT'); //affiche uniquement les heures et les minutes
     }
 });
