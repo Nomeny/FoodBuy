@@ -1,5 +1,3 @@
-
-Meteor.subscribe("foods");
 Meteor.subscribe("ProfileImages");
 Meteor.subscribe("UserImages");
 Meteor.subscribe("utilisateurs");
