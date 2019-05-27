@@ -1,27 +1,26 @@
 <template name="profil">
 	{{#if displayProfile}}
-		<!--Page de profil-->
-		<h3> Mon profil </h3>
-		{{#each getUser}}
-			<ul class="list-group">
-				<li class="list-group-item">Nom d'utilisateur : {{currentUser.username}}</li>
-				<li class="list-group-item">E-mail : {{userEmail}}</li>
-			</ul>
-			<input type="button" value="Editer" class="editbutton" id="editbutton">
-		{{else}}
-			Pas d'informations trouvées
-		{{/each}}
+	<!--Page de profil-->
+	<h3> Mon profil </h3>
+	{{#each getUser}}
+	<ul class="list-group">
+		<li class="list-group-item">Nom d'utilisateur : {{currentUser.username}}</li>
+		<li class="list-group-item">E-mail : {{userEmail}}</li>
+	</ul>
+	<input type="button" value="Editer" class="editbutton" id="editbutton">
 	{{else}}
-		<!--Options d'édition de profil. Est caché lorsque la page est chargée.-->
-		<form class="edit-profile" enctype="multipart/form-data">
-			<h3>Editer mon profil</h3>
-			Ajouter une image de profil: <input type="file" name="profileImage" id="profileImage"> <br>
-			Nom d'utilisateur : <br>
-			<input type="text"> <br>
-			Mot de passe:		<br>
-			<input type="text"> <br>
-			<input type="submit" value="Valider" class="submitbutton">
+	Pas d'informations trouvées
+	{{/each}}
+	{{else}}
+	<!--Options d'édition de profil. Est caché lorsque la page est chargée.-->
+	<form class="edit-profile" enctype="multipart/form-data">
+		<h3>Editer mon profil</h3>
+		Ajouter une image de profil: <input type="file" name="profileImage" id="profileImage"> <br>
+		Nom d'utilisateur : <br>
+		<input type="text"> <br>
+		Mot de passe: <br>
+		<input type="text"> <br>
+		<input type="submit" value="Valider" class="submitbutton">
 	</form>
 	{{/if}}
 </template>
-

@@ -36,7 +36,6 @@ Template.add_repas.events({
     		            estVeg: estVeg,
 						image: repasImage,
 						createdAt: moment(new Date()).format('LLL'),
-						//date: moment(createdAt).format('LLL')
 						vendeur: Meteor.user().username
 					});
 				}
