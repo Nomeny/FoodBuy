@@ -4,7 +4,7 @@
 
 _Par Gislain Delavy, Sinem Kilic, Andres Stadelmann, Nomeny Ramamonjisoa, Paul Zignani_
 
-Projet réalisé dans le cadre du cours Programmation pour Internet II - Meteor.js donné par Isaac Pante et accompagné par Loris Rimaz, tuteur
+Projet réalisé dans le cadre du cours Programmation pour Internet II - Meteor.js donné par Isaac Pante et Loris Rimaz
 
 Faculté des Lettres - Université de Lausanne - Février à Mai 2019 Github
 
@@ -15,13 +15,13 @@ de la nourriture, en indiquant les détails de leurs plats et un prix, s'ils le 
 autres utilisateurs. Les deux parties peuvent alors interagir par le biais d'un chat dédié à chaque repas. FoodBuy aspire à réduire
 le gaspillage alimentaire.
 
-Le site est destiné à un public très large. Il vise premièrement toutes les personnes cherchant à combattre le gaspillage alimentaire. 
+Le site est destiné à un publique très large. Il vise premièrement toutes les personnes cherchant à combattre le gaspillage alimentaire. 
 Mais il est aussi dirigé vers celles et ceux qui n'ont pas le temps ou l'envie de cuisiner, ainsi que ceux, qui à l'inverse, désirent cuisiner 
 pour les autres.
 
 ## Interface
 ---
-Cette section définit les différentes étapes d'utilisation.
+Cette section défini les différentes étapes d'utilisation.
 - L'utilisateur arrive sur la page d'accueil, il peut y voir les repas postés par la communauté.
 ![image](https://raw.githubusercontent.com/Nomeny/FoodBuy/master/Immages-ReadMe/FoodBuy-Accueil.PNG)
 - S'il veut interagir avec le site, il doit se connecter ou s'enregistrer.
@@ -31,13 +31,13 @@ Cette section définit les différentes étapes d'utilisation.
 - Enfin, s'il veut commander un repas ou obtenir plus d'informations, il peut chatter avec les autres utilisateurs. Cela ce fait sur une page détaillant le repas.
 ![image](https://github.com/Nomeny/FoodBuy/blob/master/Immages-ReadMe/FoodBuy-D%C3%A9tails.PNG)
 
-## Base de données
+##Base de données
 ---
 Le site dépend de trois bases de données principale, la première est celle qui gère les comptes des utilisateurs elle est issue du Package _accounts-base_. La seconde, _Repas_, sauvegarde les repas. C'est dans celle-ci que sont stockés les détails concernant les repas. L'utilisateur y ajoute une entrée, à chaque fois qu'il poste un nouveau repas. La dernière, _Commentaire_, enregistre les commentaires des utilisateurs. Elle contient le contenu des message, ainsi qu'un attribut lié à l'url permettant d'envoyer les message sur les pages adéquates.
 
 Les deux dernières _collections_ dépendent de la base de données issue de _accounts-base_, car elles sont les deux liés a un utilisateur.
 
-## Licences
+##Licences
 ---
 _FoodBuy_ est un logiciel gratuit
 
