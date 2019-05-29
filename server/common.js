@@ -1,8 +1,12 @@
-Meteor.publish('repas', function(){
-	return Products.find();
-})
+Meteor.publish('repasCol', function(){
+	return Repas.find();
+});
 
-Meteor.publish('categories', function(){
+Meteor.publish('categoriesCol', function(){
 	return Categories.find();
-})
+});
+
+Meteor.publish('commentairesCol',  function(){
+	return Commentaires.find();
+});
 

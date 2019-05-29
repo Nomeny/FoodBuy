@@ -1,6 +1,9 @@
 Meteor.subscribe("ProfileImages");
 Meteor.subscribe("UserImages");
 Meteor.subscribe("utilisateurs");
+Meteor.subscribe("repasCol");
+Meteor.subscribe("categoriesCol");
+Meteor.subscribe("commentairesCol")
 
 Meteor.startup(function () {
     AccountsEntry.config({        
