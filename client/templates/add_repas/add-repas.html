@@ -17,7 +17,7 @@
 				<option>Salé</option>
 				<option>sucré</option>
 			</select><br>
-			<label>Veuillez choisir</label><br>
+			<label for="estVeg">Veuillez choisir</label><br>
 			<select name="estVeg">
 				<option>non vegane</option>
 				<option>non végétarien</option>
@@ -27,7 +27,7 @@
 			<label for="ingredients">Ingredients:</label><br>
 			<textarea name="ingredients" class="post" cols="40" rows="3" placeholder="Spaghetti Barilla n°5, ragoût, Grana Padano, poivre"></textarea><br>		
 			<label for="portions">Portions:</label>
-			<input type="number" name="portions" value="1">
+			<input type="integer" name="portions" value="1">
 			<label for="lieu">Ville ou Code Postal:</label>
 			<input type="text" name="lieu">
 			<label for="image" >Image</label>
@@ -41,7 +41,7 @@
 			<label for="addresse" >Adresse:</label>
 			<input type="text" name="adresse">
 			<label for="prix">Le prix:</label>
-			<input type="number" name="prix" class="post" value="0"> <br>
+			<input type="integer" name="prix" class="post" value="0"> <br>
 			<input type="submit" value="Valider"> <!-- pour un formulaire c'est bien d'utiliser input type="submit" -->
 		</div>	
 	</form>
