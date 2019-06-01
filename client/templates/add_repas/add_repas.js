@@ -11,7 +11,6 @@ Template.add_repas.events({
         var description = event.target.description.value;
         var adresse = event.target.adresse.value;
 		var estVeg = event.target.estVeg.value;
-		//RepasImages = new Mongo.collection('images');
 		//Repas = new Mongo.collection('repas');
 
 		var file = $('#repasImage').get(0).files[0];
