@@ -1,4 +1,12 @@
 <template name="accueil">
+	{{#if currentUser}}
+		{{> accueilLoggedIn}}
+	{{else}}
+		{{> accueilNoLogIn}}
+	{{/if}}
+</template>
+
+<template name="accueilLoggedIn">
 	<h3 class="titre">Repas populaires</h3>
 	<div class="repas-main ">
 		{{#each repas}}
@@ -22,5 +30,13 @@
 		<p>Pas de repas</p>
 		{{/each}}
 	</div>
+
+</template>
+
+<template name="accueilNoLogIn">
+		<div><h1 class="text-center font-weight-bold text-decoration-none">
+		<a href="sign-in" class="btn-secondary">Connectez-vous</a> ou 
+		<a href="sign-up" class="btn-secondary">enregistrez-vous</a>, et partagez des repas avec le Monde entier!
+		</h1></div>
 
 </template>
