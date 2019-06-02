@@ -12,7 +12,7 @@ Meteor.publish('commentairesCol',  function(){
 
 Meteor.startup(function() {
 	//ajoute trois repas exemple, s'il n'y a aucun repas proposé
-	if (Repas.find().count() === 0) {
+	if (Repas.find().count() === 0) { //si la base de donnés repas est vide
 		Repas.insert({
 			nom: 'Lasagne',
 			portions: '2',
@@ -58,5 +58,11 @@ Meteor.startup(function() {
 			//date: moment(createdAt).format('LLL')
 			vendeur: 'Exemple'
 		  });
+	}
+
+	//supprime les plats exemples lorsqu'au moins trois nouveaux plats ont été ajoutés
+	if (Repas.find().count() > 6) {
+		Repas.remove({vendeur: 'Exemple'});
+
 	}
 });
