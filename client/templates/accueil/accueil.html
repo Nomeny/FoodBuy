@@ -1,14 +1,16 @@
+<!--Affiche un message aux utilisateurs qui ne sont pas  connectés-->
 <template name="accueil">
 	{{#if currentUser}}
 		{{> accueilLoggedIn}}
 	{{else}}
 		{{> accueilNoLogIn}}
+		{{> accueilLoggedIn}}
 	{{/if}}
 </template>
 
 <template name="accueilLoggedIn">
 	<h3 class="titre">Repas populaires</h3>
-	<div class="repas-main ">
+	<div class="repas-main">
 		{{#each repas}}
 		<a href="details/{{_id}}">
 			<div class="repas-block">
@@ -33,10 +35,11 @@
 
 </template>
 
+<!--Message pour les utilisateurs non connectés-->
 <template name="accueilNoLogIn">
-		<div><h1 class="text-center font-weight-bold text-decoration-none">
-		<a href="sign-in" class="btn-secondary">Connectez-vous</a> ou 
-		<a href="sign-up" class="btn-secondary">enregistrez-vous</a>, et partagez des repas avec le Monde entier!
+		<div class="alert alert-info"><h1 class="text-center font-weight-bold text-decoration-none">
+		<a href="sign-in" class="alert-link">Connectez-vous</a> ou 
+		<a href="sign-up" class="alert-link">enregistrez-vous</a>, et partagez des repas avec le Monde entier!
 		</h1></div>
-
+		
 </template>
